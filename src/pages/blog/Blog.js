@@ -16,7 +16,6 @@ export default function Blog(props) {
   const [post, setPost] = useState({});
   const [author, setAuthor] = useState({});
   const { id } = props.location.state;
-  console.log(props.location);
   useEffect(() => {
     async function fetchData() {
       try {
