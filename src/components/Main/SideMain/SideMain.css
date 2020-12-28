@@ -1,0 +1,25 @@
+.side {
+    width: 320px;
+    background-color: white;
+    box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.08);
+    background-color: white;
+    margin: auto;
+    border-radius: 15px;
+    margin-top: 30px;
+    padding: 15px 25px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.side__header {
+    margin: 20px 0;
+}
+
+hr {
+    margin: 30px auto;
+    opacity: 0.2;
+}
+
+.side__tags--item {
+    display: flex;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,238 @@
+.header {
+    margin-bottom: 24px;
+}
+
+.nav__item {
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+a {
+    color: black;
+    outline: none;
+}
+
+.header__container--navigation a:nth-child(2) {
+    color: white;
+}
+
+.header__container--navigation a:nth-child(1) {
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 576px) {
+    .header {
+        width: 100%;
+    }
+
+    .header-1 {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        z-index: 1;
+        position: relative;
+        background-color: white;
+    }
+
+    .header__container {
+        width: 80%;
+        margin: 10px auto;
+        display: flex;
+        justify-content: space-between;
+        z-index: 1;
+        position: relative;
+        background-color: white;
+    }
+
+    .header__container--logo,
+    .header__container--menu {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .header__container--logo img {
+        margin-right: 20px;
+    }
+
+    .header__container--navigation {
+        display: none;
+    }
+
+    .header__auth {
+        margin-top: -60px;
+        z-index: 0;
+        transition: all .3s;
+    }
+
+    .open {
+        margin-top: 0;
+
+    }
+
+    .auth__links {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0;
+        z-index: -1;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+    .header {
+        width: 100%;
+    }
+
+    .header-1 {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        z-index: 1;
+        position: relative;
+        background-color: white;
+    }
+
+    .header__container {
+        width: 80%;
+        margin: 10px auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header__container--logo,
+    .header__container--menu {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .header__container--logo img {
+        margin-right: 20px;
+    }
+
+    .header__container--navigation {
+        display: none;
+        list-style: none;
+        align-items: center;
+    }
+
+    .header__auth {
+        margin-top: -60px;
+        z-index: 0;
+        transition: all .3s;
+        opacity: 0;
+    }
+
+    .open {
+        margin-top: 0;
+        opacity: 1;
+
+    }
+
+    .auth__links {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0;
+        z-index: -1;
+    }
+
+
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    .header {
+        width: 100%;
+    }
+
+    .header__container {
+        width: 80%;
+        margin: 10px auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header__container--logo,
+    .header__container--menu {
+        display: flex;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .header__container--menu {
+        display: none;
+    }
+
+    .header__auth {
+        display: none;
+    }
+
+    .header__container--logo img {
+        margin-right: 20px;
+    }
+
+    .nav__links {
+        display: flex;
+        list-style: none;
+        align-items: center;
+    }
+
+}
+
+
+@media screen and (min-width: 1200px) {
+    .header {
+        width: 1200px;
+        margin: auto;
+    }
+
+    .header__container {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header__container--logo,
+    .header__container--navigation {
+        display: flex;
+        align-items: center;
+    }
+
+    .header__container--menu {
+        display: none;
+    }
+
+    .header__auth {
+        display: none;
+    }
+
+
+    .header__container--logo img {
+        margin-right: 20px;
+    }
+
+    .nav__links {
+        display: flex;
+        list-style: none;
+        align-items: center;
+    }
+
+}

@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+.container::-webkit-scrollbar {
+    display: none; /* make scrollbar transparent */
+}
+
+
+@media only screen and (min-width: 2300px) {
+    .container {
+        align-items: center;
+        justify-content: center;
+    }
+}

@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
+a {
+    text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.signup,.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    padding: 50px 0;
+    box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.signup h2 {
+    margin-bottom: 80px;
+    text-align: center;
+    font-size: 2.5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.form {
+    width: 20%;
 }
 
-.App-link {
-  color: #61dafb;
+button {
+    display: block;
+    background-color: #349e52;
+    width: 100%;
+    margin: 20px auto;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:disabled {
+    background-color: #ccc;
+}
+
+.link {
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.link__disable {
+    cursor: default;
+    color: #ccc;
+}
+
+.check__box {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.check__box span {
+    line-height: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .form {
+        width: 80%;
+    }
+    .link {
+        justify-content: space-between;
+        width: 60%;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+    .form {
+        width: 40%;
+    }
+    .link {
+        justify-content: space-between;
+        width: 20%;
+    }
+
 }

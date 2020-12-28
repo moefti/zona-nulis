@@ -1,0 +1,22 @@
+.input__type {
+    display: block;
+    outline: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px 10px;
+    margin-bottom: 28px;
+    margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.input__type:focus {
+    border: 1px solid #758B9A;
+    color: #758B9A;
+}
+
+label {
+    font-size: 18px;
+    width: 90%;
+    text-transform: capitalize;
+}

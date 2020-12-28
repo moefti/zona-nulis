@@ -1,0 +1,26 @@
+.side__user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.side__user--img {
+    width: 50px;
+    display: grid;
+    margin-right: 20px;
+}
+
+.side__user--text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 80%;
+}
+
+.side__user--text p {
+    flex: 70%;
+}
+
+.side__user--btn {
+    flex: 20%;
+}
