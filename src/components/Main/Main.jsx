@@ -21,7 +21,7 @@ export default function Main() {
         setPosts(res.data.data.data);
         setLoading(false);
       } catch (error) {
-        console.log(error.response.data);
+        alert(error.response.data.message);
       }
     }
     fetchData();
