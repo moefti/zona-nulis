@@ -10,7 +10,7 @@ import Modal from "../../components/Modal/Modal";
 export default function CreateBlog() {
   const history = useHistory();
   const { Consumer } = rootContext;
-  const { handleSubmit, register } = useForm();
+  const { handleSubmit, register, formState } = useForm();
   const [data, setData] = useState("");
   const [open, setOpen] = useState(false);
   const token = JSON.parse(localStorage.getItem("token"));
@@ -130,7 +130,9 @@ export default function CreateBlog() {
           }}
         />
 
-        <button type="submit">Posting Article</button>
+        <button type="submit" disabled={formState.isSubmitting ? true : false}>
+          Posting Article
+        </button>
       </form>
     </div>
   );

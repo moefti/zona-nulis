@@ -18,7 +18,6 @@ export default function Main() {
     async function fetchData() {
       try {
         const res = await axios.get("/posts");
-        console.log(res);
         setPosts(res.data.data.data);
         setLoading(false);
       } catch (error) {
